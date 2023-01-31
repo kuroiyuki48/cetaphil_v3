@@ -110,21 +110,3 @@ section {
   from {opacity: 1.0;}
   to {opacity: 0.0;}
 }
-
-#html-container {
-  width: 100%;
-  background-color: #272A3A;
-  color: #d8dadb;
-}
-
-#aframe-container {
-  float: left;
-  border: 3px solid black;
-}
-
-.rs-base {
-  position: absolute;
-  right: 0;
-  left: unset;
-  top: 0;
-}
