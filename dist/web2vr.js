@@ -2315,7 +2315,7 @@ var AframeContext = /*#__PURE__*/function () {
       // create sky if sky doesnt exist
       if (document.getElementsByTagName("a-sky").length == 0 && this.settings.skybox) {
         this.sky = document.createElement("a-sky");
-        this.sky.setAttribute("color", "#a9f8fe");
+        this.sky.setAttribute("color", "transparent");
         this.scene.appendChild(this.sky);
       }
     }
