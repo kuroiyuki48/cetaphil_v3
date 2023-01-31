@@ -17,11 +17,8 @@
 <style>
     .card {
         overflow: hidden;
-    }
-    img {
-        width: 100%;
-        /* max-width: 300px; */
-        height: auto;
+        position: absolute;
+        width: 750px;
     }
 </style>
 <body class="container">
@@ -53,13 +50,13 @@
     </div>
     <script>
         
-        const babyVR = new Web2VR("#card1", { position: { x: -1.300, y: 1.758, z: -1.300 }, rotation: { y: 10 } });
+        const babyVR = new Web2VR("#card1", { position: { x: -1.300, y: 1.800, z: -1.300 }, rotation: { y: 15 } });
         babyVR.start();
 
-        const signVR = new Web2VR("#card2", { position: { x: -0.900, y: 1.758, z: -1.500 } });
+        const signVR = new Web2VR("#card2", { position: { x: -0.900, y: 1.800, z: -1.500 } });
         signVR.start();
         
-        const acneVR = new Web2VR("#card3", { position: { x: -0.500, y:1.758, z: -1.700 }, rotation: { y: -15 } });
+        const acneVR = new Web2VR("#card3", { position: { x: -0.500, y:1.800, z: -1.700 }, rotation: { y: -15 } });
         acneVR.start();
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
