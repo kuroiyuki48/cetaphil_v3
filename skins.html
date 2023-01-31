@@ -32,7 +32,7 @@
             <div class="card-body">
                 <h5 class="card-title">BABY</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="index.html#baby" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div id="card2" class="card col-md-4">
@@ -40,7 +40,7 @@
             <div class="card-body">
                 <h5 class="card-title">5 SIGNS OF SKIN SENSITIVITY</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="index.html#signs" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div id="card3" class="card col-md-4">
@@ -48,19 +48,19 @@
             <div class="card-body">
                 <h5 class="card-title">ACNE</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="index.html#acne" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
     </div>
     <script>
         
-        const babyVR = new Web2VR("#card1", { position: { x: -2.000, y: 1.800, z: -1.500 } });
+        const babyVR = new Web2VR("#card1", { position: { x: -1.500, y: 1.800, z: -1.500 }, rotation: { y: 15 } });
         babyVR.start();
 
         const signVR = new Web2VR("#card2", { position: { x: 0, y: 1.800, z: -1.500 } });
         signVR.start();
         
-        const acneVR = new Web2VR("#card3", { position: { x: 2.000, y:1.800, z: -1.500 } });
+        const acneVR = new Web2VR("#card3", { position: { x: 1.500, y:1.800, z: -1.500 }, rotation: { y: -15 } });
         acneVR.start();
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
