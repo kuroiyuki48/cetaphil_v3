@@ -18,25 +18,60 @@
     
 </head>
 <style>
-    #html-container {
-        position: absolute;
-        width: 200px;
-        background-color: gainsboro;
+    #card {
+        width: 300px;
+        min-width: 300px; /* To Prevent Element's Width From Going Below 300px */
+        
+        background: #fff;
+        font-family: "Open Sans", sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+        border-radius: 7px;
+        
+        resize: both; /* To Resize */
+        overflow: auto;
+    }
+    
+    #img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 7px 7px 0 0;
+    }
+    
+    #title {
         text-align: center;
+    }
+    
+    #desc {
+        margin: 1rem;
+        color: #a5a2bc;
+        line-height: 1.6rem;
+        word-spacing: 2px;
     }
 </style>
 <body>
-    <div id="html-container">
-      Welcome to Web2VR!
-      <button id="btn">Click me!</button>
-      <div id="info"></div>
+    <div id="card" class="card1">
+        <img id="img" src="https://www.cetaphil.co.id/dw/image/v2/BGGN_PRD/on/demandware.static/-/Sites-Galderma-ID-Library/default/dw253c3005/why-cetaphil/Indonesia_5signs_desktop.jpg">
+        <h1 id="title">BABY</h1>
+        <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
+    </div>
+    <div id="card" class="card2">
+        <img id="img" src="https://www.cetaphil.co.id/dw/image/v2/BGGN_PRD/on/demandware.static/-/Sites-Galderma-ID-Library/default/dw253c3005/why-cetaphil/Indonesia_5signs_desktop.jpg">
+        <h1 id="title">5 SIGNS OF SKIN SENSITIVITY</h1>
+        <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
+    </div>
+    <div id="card" class="card3">
+        <img id="img" src="https://www.cetaphil.co.id/dw/image/v2/BGGN_PRD/on/demandware.static/-/Sites-Galderma-ID-Library/default/dw253c3005/why-cetaphil/Indonesia_5signs_desktop.jpg">
+        <h1 id="title">ACNE</h1>
+        <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in felis at arcu accumsan aliquet vel id purus.</p>
     </div>
     <script>
-      document.getElementById("btn").onclick = () => {
-        document.getElementById("info").innerText = "Button Clicked!";
-      };
-      const web2vr = new Web2VR("#html-container");
-      web2vr.start();
+        const signVR = new Web2VR(".card1", { position: { x: -1.399, y: 1.758, z: 0.660 }, rotation: { y: 90 } });
+        signVR.start();
+        const babyVR = new Web2VR(".card2", { position: { x: -0.837, y: 1.850, z: -1.420 } });
+        babyVR.start();
+        const acneVR = new Web2VR(".card3", { position: { x: 1.784, y: 2.075, z: -0.107 }, rotation: { y: 270 } });
+        acneVR.start();
     </script>
     
 </body>
