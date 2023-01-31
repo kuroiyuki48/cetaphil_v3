@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>SAM3.0 SKINSENSE</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.theme.css'>
+    <link rel='stylesheet' href='https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css'>\
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="dist/web2vr.min.js"></script>
+    <script src="assets/embedScene.js"></script>
+    
+</head>
+<body>
+    
+    <div id="html-container">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark navbar-theme">
+            <a class="navbar-brand" href="index.html">SAM3.0 SKINSENSE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-md-center" id="main-menu">
+                <ul class="navbar-nav text-uppercase mt-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#signs">5 SIGNS OF SKIN SENSITIVITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#baby">BABY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acne">ACNE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analyser">SKIN ANALYSER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">SHOP NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section data-section-name="home" class="parallax-window" data-parallax="scroll" data-image-src="https://www.cetaphil.co.id/dw/image/v2/BGGN_PRD/on/demandware.static/-/Sites-Galderma-ID-Library/default/dw253c3005/why-cetaphil/Indonesia_5signs_desktop.jpg">	
+            
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col reveal">
+                        <h1 class="display-4 text-center text-uppercase">Welcome to Skinsense. </h1>
+                        <h5>An interactive skin health experince.</h5><br>
+                        <p>Did you know it is estimated that around 70% of people worldwide have some measure of sensitive <br style="display: block;">skin? <br style="display: block;"><br>While people experience varying degrees of skin sensitivity, most have <br style="display: block;">sensory effects, such as tightness, dryness, roughness, and more. <br style="display: block;"><br>Learn how Cetaphil can help with your journey to healthy skin</p>
+                        
+                        
+                        <div class="clearfix"></div>
+                        <!-- NEXT BUTTON -->
+                        <div class="btn-next"><i class="fa fa-angle-down bounce"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="aframe-container">
+        <a-scene embedded>
+
+        </a-scene>
+    </div>
+    <script>
+        const web2vr = new Web2VR(document.getElementById("html-container"), { debug: true });
+        web2vr.start();
+    </script>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js'></script>
+    <script src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js'></script>
+    <script src="assets/script.js"></script>
+    
+</body>
+</html>
